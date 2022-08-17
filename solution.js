@@ -22,5 +22,13 @@ console.log(onlyEvenValues(list));
 
 console.log("Aufgabe3");
 const zeichenkette = ["j", 5, "!", 3];
-function showFirstAndLast(zeichenkette) {}
+function showFirstAndLast(zeichenkette) {
+    let firstAndLast = [];
+    return (firstAndLast =
+        zeichenkette[0] + zeichenkette[zeichenkette.length - 1]);
+}
 console.log(showFirstAndLast(zeichenkette));
+
+console.log("Aufgabe4");
+function vowelCount() {}
+console.log(vowelCount());
