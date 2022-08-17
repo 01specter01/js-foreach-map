@@ -30,5 +30,25 @@ function showFirstAndLast(zeichenkette) {
 console.log(showFirstAndLast(zeichenkette));
 
 console.log("Aufgabe4");
-function vowelCount() {}
-console.log(vowelCount());
+const vowel = {
+    a: 0,
+    e: 0,
+    i: 0,
+    o: 0,
+    u: 0,
+};
+
+const zeichenkette2 = "I Am awesome and so are you";
+function vowelCount(str) {
+    const letters = ["a", "e", "i", "o", "u"];
+    str.toLowerCase()
+        .split("")
+        .forEach((element) => {
+            if (letters.includes(element)) {
+                return (vowel[element] += 1);
+            }
+        });
+    return vowel;
+}
+
+console.log(vowelCount(zeichenkette2));
