@@ -52,3 +52,20 @@ function vowelCount(str) {
 }
 
 console.log(vowelCount(zeichenkette2));
+
+function moveVowel(input) {
+    const vowels = "aeiou";
+    let front = "";
+    let back = "";
+    for (let i = 0; i < input.length; i++) {
+        const all = input[i];
+        if (vowels.includes(all)) {
+            back += all;
+        } else {
+            front += all;
+        }
+    }
+    return front + back;
+}
+
+console.log(moveVowel("Hallo ich bin der Leo"));
